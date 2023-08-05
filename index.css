@@ -10,16 +10,13 @@
 
 body {
     width: 100%;
-    height: 800px;
     background-image: url("images/index/body-background-img-5000-3000-px.png");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 /* ************************************************************************************************************** */
 
 header{
-	/*position: fixed;
-	top: 0;*/
 	width: 100%;
 	height: 130px;
 	
@@ -27,6 +24,8 @@ header{
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
 	
 }
 
@@ -77,6 +76,7 @@ header a:hover{
     align-items: center;
     height: 100%;
 
+    padding-top: 100px;
     padding-left: 100px;
     padding-right: 100px;
  }
@@ -91,6 +91,10 @@ header a:hover{
 
  .big-div{
     width: 40%;
+ }
+
+ #left-big-div{
+  margin-right: 100px;
  }
 
  .big-div-inner-div{
@@ -184,4 +188,187 @@ header a:hover{
    margin-right: 10px;
  }
 
+
+  /* ------------------------------------------------------------------------------------ */
+  
+  @media(max-width: 1600px){
+  
+    /* no change */
+    /*page{ border: 2px solid red;}*/
+
+    .big-div{ width: 50%; }
+
  
+  }
+  
+  /* ------------------------------------------------------------------------------------ */
+  
+  @media(max-width: 1400px){
+  
+    /* no change */
+    /*page{border: 2px solid purple;}*/
+
+    
+    #main-div{ display: flex; flex-direction: column; justify-content: center; align-items: center; flex-wrap: nowrap; }
+    
+    .big-div{ width: 50%;
+      margin: 0px;
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #left-big-div{ margin-right: 0px; width: 60%;}
+
+    .big-div-inner-div h1 { line-height: 60px; }
+   .big-div-inner-div p{
+      text-align: center;
+   }
+
+   #button-div{
+    margin-top: 20px;
+    margin-bottom: 50px;
+ 
+  }
+   
+  }
+  
+  /* ------------------------------------------------------------------------------------ */
+  
+  @media(max-width: 1300px){
+  
+    /*page{
+     border: 2px solid blue;
+    }*/
+    
+  }
+  
+  /* ------------------------------------------------------------------------------------ */
+  
+  @media(max-width: 1200px){
+  
+    /* no change */
+    /*page{
+    border: 2px solid pink;
+    }*/
+      
+  }
+  
+  /* ------------------------------------------------------------------------------------ */
+  
+  @media(max-width: 1100px){
+  
+   /* page{
+    border: 2px solid yellow;
+    }*/
+
+    .big-div{
+      width: 60%;
+      text-align: center;
+    }
+    #contact-info-div{display: flex; flex-direction: column; justify-content: center; align-items: center;}
+    .contact-info-inner-div { margin-bottom: 20px;}
+  }
+  
+  /* ------------------------------------------------------------------------------------ */
+  
+  @media(max-width: 1000px){
+  
+   page{
+    /*border: 2px solid green;*/
+
+    padding-left: 50px;
+    padding-right: 50px;
+    }
+    .big-div{
+      width: 70%;
+      text-align: center;
+    }
+   
+  }
+  
+  /* ------------------------------------------------------------------------------------ */
+  
+  @media(max-width: 900px){
+  
+    page{
+     /*border: 2px solid red;*/
+     padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    .big-div{
+      width: 80%;
+    }
+  }
+  
+  /* ------------------------------------------------------------------------------------ */
+  
+  @media(max-width: 800px){
+  
+    /*page{
+     border: 2px solid orange;
+    }*/
+    .big-div{
+      width: 90%;
+    }
+  }
+  
+  /* ------------------------------------------------------------------------------------ */
+  
+  @media(max-width: 700px){
+  
+    /*page{
+      border: 2px solid purple;
+    }*/
+
+    .big-div{
+      width: 100%;
+    }
+
+  }
+  
+  /* ------------------------------------------------------------------------------------ */
+  
+  @media(max-width: 600px){
+  
+    page{
+    /* border: 2px solid blue;*/
+     padding-left: 0px;
+    padding-right: 0px;
+    }
+  }
+  
+  /* ------------------------------------------------------------------------------------ */
+  
+  @media(max-width: 500px){
+  
+    /*page{
+      border: 2px solid pink;
+    }*/
+    header{
+
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    
+      
+    }
+ 
+  }
+  
+  /* ------------------------------------------------------------------------------------ */
+  
+  @media(max-width: 400px){
+  
+    /*page{
+      border: 2px solid yellow;
+    }*/
+
+   
+  
+  }
