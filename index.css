@@ -349,15 +349,13 @@ header a:hover{
       border: 2px solid pink;
     }*/
     header{
-
-      
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-    
-      
     }
+
+    
  
   }
   

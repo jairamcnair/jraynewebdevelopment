@@ -2,7 +2,7 @@
 <html>
     <head>
         <title> Hello! </title>
-        <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+        <link rel="icon" type="image/x-icon" width="40px" height="40px" href="images/favicon.png">
 
         <!--CSS FILE LINK-->
 		<link href="index.css" type="text/css" rel="stylesheet"/> 
@@ -14,6 +14,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Italianno&family=Raleway:wght@100;200;400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
         <!-- End of Google Font Kit Links -->
+
+         
     </head>
 
     <body>
@@ -34,12 +36,12 @@
         <page>
             <div id="main-div">
                 <div class="big-div" id="left-big-div"> 
-                    <div class="big-div-inner-div"> <h1> Develop Your </h1></div>
-                    <div class="big-div-inner-div"> <h1> Website With Me!</h1></div>
-                    <div class="big-div-inner-div"> 
+                    <div class="big-div-inner-div" id="text1"> <h1>Develop Your Website</h1></div>
+                    <div class="big-div-inner-div" id="text2"> <h1>Website With Me!</h1></div>
+                    <div class="big-div-inner-div" id="text3"> 
                         <p> I'm a website developer proficient in HTML, CSS, and JavaScript. </br> In fact, those languages are what I used to code this website right here!</p>
                     </div>
-                    <div id="button-div" class="big-div-inner-div"> <button> More Details </button></div>
+                    <div id="button-div" class="big-div-inner-div"> <button id="btn" type="button"> More Details </button></div>
 
                     <div id="contact-info-div"> 
                         <div class="contact-info-inner-div"> 
@@ -78,9 +80,13 @@
 
 
 
-        <footer>
+        <footer id="footer">
 
         </footer>
+
+        <!-- JavaScript -->
+        <script src="index.js"></script>
+        <!-- JavaScript -->
     </body>
     
 </html>
