@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Open+Sans:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /*font-family: 'Cormorant Garamond', serif;*/
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+    background-color: #F7F9F8;
+    padding-top: 70px;
+}
+
+.pictures{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+header{
+    width: 100%;
+    /*height: 100px;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+#nav1, #nav2 {
+    width: 33%;
+  
+}
+
+#logo {
+    width: 15%;
+}
+
+#nav1, #nav2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#nav1 a, #nav2 a{
+    text-decoration: none;
+    color: #808080;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+/*page{
+    /*display: flex;                dont need bc main-div widths are 100% and column is the default
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}*/
+
+page h1, p{
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.main-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+    width: 100%;
+    /*border: 2px solid pink;*/
+}
+
+.white-div{
+    background-color: white;
+}
+.inner-level-1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#text-div-1{
+    width: 50%;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-left: 1px solid #808080; border-right: 1px solid #808080;
+    padding-bottom: 200px;
+    padding-top: 200px;
+
+    background-color: white;
+}
+
+#div-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.side-div{
+    width: 25%;
+    /*background-image: url("images/mountain-550-700-px.png");*/
+    filter: blur(5px);
+  -webkit-filter: blur(5px);
+ 
+
+}
+
+.side-img{
+    filter: blur(5px);
+  -webkit-filter: blur(5px);
+}
+
+#moving-div{
+    display:flex; flex-direction: row; justify-content: left; align-items: center;
+}
+#ourstory{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #EBE5E0;
+}
+
+#white-div{
+    background-color: white;
+    color: black;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#moving-img{
+    width: 30%;
+}
+.hidden{
+    width: 40%;
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(-50%);
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+   /* transition: width 2s;*/
+}
+
+.hidden2{
+    width: 40%;
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(50%);
+}
+.show2{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+#white-div{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
