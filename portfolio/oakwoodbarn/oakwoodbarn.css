@@ -32,25 +32,48 @@ header{
     margin-bottom: 70px;
 }
 
-#nav1, #nav2 {
+#nav1, #nav2{
     width: 33%;
+    /*border: 2px solid red;*/
   
 }
 
+#nav2-nav, #socials{
+    width: 100%;
+}
 #logo {
     width: 15%;
 }
 
-#nav1, #nav2 {
+#nav1, #nav2-nav{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+
 }
 
+#nav2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
 #nav1 a, #nav2 a{
     text-decoration: none;
     color: #808080;
+}
+
+#socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+}
+
+.socials-div{
+    width: 30px;
 }
 
 /* ----------------------------------------------------------------------------------------------------------------- */
@@ -269,8 +292,8 @@ input{
     background-color: white;
     color: #808080;
     border: 0px;
-    width: 150px;
-    height: 75px;
+    width: 20;
+    height: 50px;
 
 }
 
@@ -372,4 +395,13 @@ input{
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
+}
+
+#last-div{
+    display: flex;
+    flex-direction: row;
+}
+
+#last-div div{
+    
 }
