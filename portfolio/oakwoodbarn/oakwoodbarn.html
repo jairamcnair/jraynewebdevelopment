@@ -11,9 +11,9 @@
 
     <header>
         <div id="nav1">
-            <div class="nav"> <a href="index.html"> HOME </a></div>
-            <div class="nav"> <a href="portfolio/portfolio.html"> ABOUT </a></div>
-            <div class="nav"> <a href="investment/investment.html"> CONTACT </a></div>
+            <div class="nav"> <a href="#"> HOME </a></div>
+            <div class="nav"> <a href="#"> ABOUT </a></div>
+            <div class="nav"> <a href="#"> CONTACT </a></div>
         </div>
 
         <div id="logo"> 
@@ -21,22 +21,22 @@
         </div>
 
         <div id="nav2">
-            <div class="nav"> <a href="index.html"> GALLERY </a></div>
-            <div class="nav"> <a href="portfolio/portfolio.html"> PACKAGES </a></div>
-            <div class="nav"> <a href="investment/investment.html"> AVAILABILITY </a></div>
+            <div class="nav"> <a href="#"> GALLERY </a></div>
+            <div class="nav"> <a href="#"> PACKAGES </a></div>
+            <div class="nav"> <a href="#"> AVAILABILITY </a></div>
         </div>
     </header>
 
 
 
     <page>
-        <div class="main-div" id="div-1">
+        <div class="flex-column-div" id="div-1">
             <div class="inner-level-1"> 
                 <img id="logo-img"  class="pictures" src="images/oakwood-banner-1200-800-px.png"/>
             </div>
         </div>
-        <div class="main-div white-div" id="div-2">
 
+        <div class="main-div white-div flex-row-div" id="div-2">
             <div id="text-div-1" class="inner-level-1"> 
                 <h1> Your Dream Venue Awaits... </h1>
                 <p>
@@ -47,13 +47,11 @@
                     amet blandit arcu. Nam fermentum lacus a augue faucibus rutrum. Duis ante libero, placerat vel nibh id, aliquet vulputate augue.
                 </p>
             </div>
-
-          
         </div>
-
-        <div class="main-div white-div" id="div-2">
+        
+        <div class="main-div white-div flex-row-div" id="div-2">
             <div id="gallery-div-1" class="inner-level-1"> 
-                <div class="text-class">
+                <div class="flex-column-div">
                     <h1> Featured Galleries </h1>
                 </div>
                 <div class="gallery-inner-div">
@@ -61,15 +59,11 @@
                     <div class="gallery-div"> <a class="gallery-href" href="#"><img class="pictures" src="images/gallery2-500-500-px.png"/><h2 class="gallery-text"> Barn + Property </h2> </a></div>
                     <div class="gallery-div"> <a class="gallery-href" href="#"><img class="pictures" src="images/gallery3-500-500-px.png"/><h2 class="gallery-text"> Decorations </h2> </a></div>
                 </div>
-                    
-                
             </div>
-
-          
         </div>
 
-        <div class="main-div white-div" id="div-2">
-
+    <!--
+        <div class="main-div white-div flex-row-div" id="div-2">
             <div class="side-div hidden">
                 <img class="side-img pictures" src="images/mountain1-550-700-px.png" />
             </div>
@@ -83,14 +77,12 @@
                     amet blandit arcu. Nam fermentum lacus a augue faucibus rutrum. Duis ante libero, placerat vel nibh id, aliquet vulputate augue.
                 </p>
             </div>
-
             <div class="side-div hidden2">
                 <img class="side-img pictures" src="images/mountain2-550-700-px.png" />
             </div>
         </div>
-
-        <div class="main-div" id="div-3">
-            
+    --> 
+        <div id="div-3">
                 <div class="hidden white-div" id="white-div"> 
                     <div> <h1> Our Story </h1> </div>
                     <div>
@@ -101,23 +93,95 @@
                         </p>
                     </div>
                 </div>
-
                 <div class="hidden" id="moving-img"> <img class="pictures" src="images/ourstory-1330-2000-px.png"/></div>
+        </div>
+
+        <div id="slideshow-div">
+
+            <div id="random-div">
+
+                <div id="slide-show-div-inner">
+
+                    <div id="slideshow-text-div">
+                        <div>
+                            <h1> Some of Our Moments </h1>
+                            <p>
+                                Aliquam magna ipsum, tincidunt et tristique a, maximus vel orci. Donec ex ipsum, tincidunt non lectus sit amet, pellentesque
+                            </p>
+                        </div>
+                        <div>
+                            <a href="#"><button id="viewmore"> VIEW MORE </button></a>
+                        </div>
+                            
+                    </div>
+    
+                    <div class="slideshow-container2" id="ss-c1">
+                        <div class="mySlides2 fade2">
+                          <img  class="pictures" src="images/ss-4-400-500-px.png" >
+                        </div>
+                        
+                        <div class="mySlides2 fade2">
+                          <img  class="pictures" src="images/ss-5-400-500-px.png" >
+                        </div>
+                        
+                        <div class="mySlides2 fade2">
+                          <img class="pictures" src="images/ss-6-400-500-px.png" >
+                        </div>
+                    </div>
+        
+                    <div class="slideshow-container" id="ss-c1">
+                        <div class="mySlides fade">
+                          <img class="pictures" src="images/ss-1-250-200-px.png" >
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <img class="pictures" src="images/ss-2-250-200-px.png" >
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <img  class="pictures" src="images/ss-3-250-200-px.png" >
+                        </div>
+                    </div>
+    
+                    
+                </div>
+                
+            </div>
+
+        </div>
+        
+
+        <div class="flex-column-div" id="form-div">
+            <div class="form-inner-div">
+                <h1> SCHEDULE A TOUR </h1>
+            </div>
+            <div class="form-inner-div">
+                <form>
+                    <div class="flex-row-div">
+                        <input type="text" name="firstname" placeholder="FIRST NAME"/>
+                        <input type="text" name="lastname" placeholder="LAST NAME"/>
+                    </div>
+
+                    <div class="flex-row-div">
+                        <input type="text" name="phonenumber" placeholder="PHONE NUMBER"/>
+                        <input type="text" name="emailaddress" placeholder="EMAIL ADDRESS"/>
+                    </div>
+
+                    <div class="flex-row-div">
+                        <input type="text" name="guestcount" placeholder="GUEST COUNT"/>
+                        <input type="text" name="eventdate" placeholder="EVENT DATE"/>
+                    </div>
+
+                    <div class="flex-row-div">
+                        <input id="submit" type="submit" value="SEND REQUEST" />
+                        
+                    </div>
+                </form>
+                
+            </div>
             
         </div>
 
-        <div class="main-div">
-            <div id="text-div-1" class="inner-level-1"> 
-                <h1> Nestled in the Blueridge Mountains </h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim, metus at pretium ornare, tellus lacus rhoncus sem, eget pulvinar sapien 
-                    augue ac lorem. Aliquam magna ipsum, tincidunt et tristique a, maximus vel orci. Donec ex ipsum, tincidunt non lectus sit amet, pellentesque 
-                    elementum nibh. Ut sit amet tortor mauris. Pellentesque massa tellus, lobortis quis massa ac, dignissim mattis nisi. Cras id dolor neque. 
-                    Nullam commodo condimentum felis porttitor cursus. Quisque ut ante et arcu scelerisque cursus in a arcu. Donec fringilla rutrum dolor, sit 
-                    amet blandit arcu. Nam fermentum lacus a augue faucibus rutrum. Duis ante libero, placerat vel nibh id, aliquet vulputate augue.
-                </p>
-            </div>
-        </div>
 
         
 
@@ -126,5 +190,45 @@
     </page>
 
     <script defer src="oakwoodbarn.js"> </script>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          //let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          /*for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }*/
+          slides[slideIndex-1].style.display = "block";  
+          slides[slideIndex-1].className += " active";
+          setTimeout(showSlides, 3000); // Change image every 2 seconds
+        }
+    </script>
+    <script>
+        let slideIndex2 = 0;
+        showSlides2();
+        
+        function showSlides2() {
+          let x;
+          let slides2 = document.getElementsByClassName("mySlides2");
+          
+          for (x = 0; x < slides2.length; x++) {
+            slides2[x].style.display = "none";  
+          }
+          slideIndex2++;
+          if (slideIndex2 > slides2.length) {slideIndex2 = 1}    
+
+          slides2[slideIndex2-1].style.display = "block";  
+          slides2[slideIndex2-1].className += " active2";
+          setTimeout(showSlides2, 4000); // Change image every 2 seconds
+        }
+        </script>
 
 </html>
