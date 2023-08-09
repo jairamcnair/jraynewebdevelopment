@@ -24,12 +24,13 @@ body {
 
 header{
     width: 100%;
-    /*height: 100px;*/
+    height: 150px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 70px;
+    /*border: 1px solid pink;*/
 }
 
 #nav1, #nav2{
@@ -56,15 +57,19 @@ header{
 #nav2 {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
+
 #nav1 a, #nav2 a{
     text-decoration: none;
     color: #808080;
 }
 
 #socials{
+    position: relative;
+    bottom: 50px;
+    left: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -399,9 +404,98 @@ input{
 
 #last-div{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
-#last-div div{
+
+#tri-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#left-tri{
+    border-right: 1px solid #808080;
+    text-align: right;
+
     
+}
+#right-tri{
+    border-left: 1px solid #808080;
+}
+
+#left-tri, #right-tri, #middle-tri{
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;
+    align-items: center;*/
+    width: 25%;
+    border-bottom: 1px solid #808080;
+    border-top: 1px solid #808080;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#thin-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 75%;
+    height: 50px;
+    
+}
+
+#last-div a{
+    text-decoration: none;
+    color: #393434;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    
+}
+
+/* ------------------------------------------------------------------------- */
+footer {
+    /*background-color: #ede1d1;*/
+    background-color: #F7F9F8;
+    width: 100%;
+    height: 40px;
+    border-top: 1px solid #808080;
+   
+}
+
+footer p {
+    color: #808080;
+    font-weight: 400;
+    float: right;
+    padding-right: 10px;
+    font-style: italic;
+    font-size: 0.75em;
+}
+
+footer a {
+    text-decoration: none;
+    color: #808080;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#footer-root-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    /*background-color: #ede1d1;*/
+    background-color: #F7F9F8;
+    
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
