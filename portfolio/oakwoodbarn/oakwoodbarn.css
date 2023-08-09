@@ -623,6 +623,19 @@ footer a:hover {
         width: 70%;
        
     }
+
+        #div-2{
+
+        }
+
+        #gallery-div-1{
+            width: 75%;
+        }
+
+        /*.div-2-inner{
+            width: 100%;
+            border: 2px solid;
+        }*/
      
     }
     
@@ -648,6 +661,10 @@ footer a:hover {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    #white-div, #moving-img{
+        width: 45%;
     }
 
      
@@ -766,6 +783,9 @@ footer a:hover {
        border: 2px solid red;
       }
 
+      #gallery-div-1{
+        width: 85%;
+    }
       #left-tri, #right-tri, #middle-tri{
         display: flex;
         flex-direction: column;
@@ -797,6 +817,25 @@ footer a:hover {
       page, header{
        border: 2px solid orange;
       }
+
+      #gallery-inner-div{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    }
+
+    #image-div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallery-div{
+        width: 100%;
+    }
+
+    .div-2-inner a{
+        font-size: 15px;
+    }
     }
     
     /* ------------------------------------------------------------------------------------ */
@@ -820,6 +859,19 @@ footer a:hover {
         width: 20;
         height: 50px;
     
+    }
+
+    #white-div, #moving-img{
+        width: 85%;
+    }
+
+    #white-div{
+        margin-bottom: 20px;
+    }
+
+    #div-3{
+        display: flex;
+        flex-direction: column;
     }
   
     }
