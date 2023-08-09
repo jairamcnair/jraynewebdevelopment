@@ -100,6 +100,9 @@ page h1, p, h2{
     line-height: 30px;
 }
 
+a{
+    color: black;
+}
 .flex-row-div{
     display: flex;
     flex-direction: row;
@@ -315,19 +318,24 @@ input{
     /*border: 2px solid pink;*/
     background-color: white;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    /*justify-content:;*/
     align-items: center;
    
 }
 
 #random-div{
     /*border: 5px solid brown;*/
-    width: 60%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 #slide-show-div-inner{  /* when setting position: relative, make sure the container div width is in pixels so when you make screen smaller the elements stay the same*/
     width: 800px;
+
     /*border: 2px solid orange;*/
     display: flex;
     flex-direction: column;
@@ -398,7 +406,7 @@ input{
     to {opacity: 1}
   }
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+@media (max-width: 300px) {
   .text {font-size: 11px}
 }
 
@@ -447,7 +455,9 @@ input{
     justify-content: space-evenly;
     align-items: center;
     width: 75%;
-    height: 50px;
+    /*height: 50px;*/
+    padding-top: 20px;
+    padding-bottom: 20px;
     
 }
 
@@ -499,3 +509,417 @@ footer a:hover {
     padding-bottom: 10px;
     padding-top: 10px;
 }
+
+@media(max-width: 1700px){
+    /* no change */
+    page, header{
+     border: 2px solid green;
+    }
+
+    
+    
+    
+    }
+    
+    
+    /* ------------------------------------------------------------------------------------ */
+    
+    @media(max-width: 1600px){
+    
+      /* no change */
+      page, header{
+          border: 2px solid red;
+      }
+
+      /* 
+        #slideshow-div{
+    width: 100%;
+    border: 2px solid pink;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content:;
+    align-items: center;
+   
+}
+
+#random-div{
+    border: 5px solid brown;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+      */
+   
+    }
+    
+    /* ------------------------------------------------------------------------------------ */
+    
+    @media(max-width: 1500px){
+    
+    }
+    
+    /* ------------------------------------------------------------------------------------ */
+    
+    @media(max-width: 1400px){
+    
+      /* no change */
+      page, header{
+       border: 2px solid purple;
+      }
+
+      #left-tri, #right-tri, #middle-tri{
+        display: flex;
+        flex-direction: column;
+        /*justify-content: center;
+        align-items: center;*/
+        width: 30%;
+        border-bottom: 1px solid #808080;
+        border-top: 1px solid #808080;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    #thin-div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 80%;
+        
+        
+    }
+
+    input{
+        padding: 10px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+        width: 25%;
+    }
+    #submit{
+        background-color: white;
+        color: #808080;
+        border: 0px;
+        width: 20;
+        height: 50px;
+    
+    }
+    }
+    
+    /* ------------------------------------------------------------------------------------ */
+    
+    @media(max-width: 1300px){
+    
+      /* no change */
+      page, header{
+      border: 2px solid blue;
+      }
+
+      
+      #random-div{
+        /*border: 5px solid brown;*/
+        width: 70%;
+       
+    }
+     
+    }
+    
+    /* ------------------------------------------------------------------------------------ */
+    
+    @media(max-width: 1200px){
+    
+      /* no change */
+      page, header{
+      border: 2px solid pink;
+      }
+
+      /*#slide-show-div-inner{
+        border: 10px solid purple;
+      }*/
+      #random-div{
+        display: flex;
+        flex-direction: column;
+      }
+      #slide-show-div-inner{  /* when setting position: relative, make sure the container div width is in pixels so when you make screen smaller the elements stay the same*/
+        /*width: 90%;*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+     
+        
+    }
+    
+    /* ------------------------------------------------------------------------------------ */
+    
+    @media(max-width: 1100px){
+    
+      page, header{
+      border: 2px solid yellow;
+      }
+
+      #left-tri, #right-tri, #middle-tri{
+        display: flex;
+        flex-direction: column;
+        /*justify-content: center;
+        align-items: center;*/
+        width: 35%;
+        border-bottom: 1px solid #808080;
+        border-top: 1px solid #808080;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    #thin-div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 85%;
+        
+        
+    }
+    }
+    
+    /* ------------------------------------------------------------------------------------ */
+    
+    @media(max-width: 1000px){
+    
+      page, header{
+      border: 2px solid green;
+      }
+
+      #slideshow-text-div, .slideshow-container, .slideshow-container2{
+        position: static;
+        margin-bottom: 30px;
+        margin-top: 10px;
+      }
+
+      #slideshow-div{
+        justify-content: center;
+        align-items: center;
+
+        padding-top: 30px;
+        padding-bottom: 20px;
+      }
+      #random-div{
+      width: 100%;
+      }
+
+      #slideshow-div{
+        width: 100%;
+      }
+
+      #slide-show-div-inner{
+        width: 100%;
+      }
+      #slide-show-div-inner{  /* when setting position: relative, make sure the container div width is in pixels so when you make screen smaller the elements stay the same*/
+        width: 1000px;
+    }
+
+
+      input{
+        padding: 10px;
+    
+        margin-bottom: 50px;
+        width: 30%;
+        }
+        #submit{
+        background-color: white;
+        color: #808080;
+        border: 0px;
+        width: 20;
+        height: 50px;
+    
+        }
+        #slideshow-div{
+            width: 100%;
+            /*border: 2px solid pink;*/
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            /*justify-content:;*/
+            align-items: center;
+           
+        }
+        
+        #random-div{
+            /*border: 5px solid brown;*/
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+     
+    }
+    
+    /* ------------------------------------------------------------------------------------ */
+    
+    @media(max-width: 900px){
+    
+      page, header{
+       border: 2px solid red;
+      }
+
+      #left-tri, #right-tri, #middle-tri{
+        display: flex;
+        flex-direction: column;
+        /*justify-content: center;
+        align-items: center;*/
+        width: 50%;
+        border-bottom: 1px solid #808080;
+        border-top: 1px solid #808080;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    #thin-div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        
+    }
+  
+    }
+    
+    /* ------------------------------------------------------------------------------------ */
+    
+    @media(max-width: 800px){
+    
+      page, header{
+       border: 2px solid orange;
+      }
+    }
+    
+    /* ------------------------------------------------------------------------------------ */
+    
+    @media(max-width: 700px){
+    
+      page, header{
+        border: 2px solid purple;
+      }
+
+      input{
+        padding: 10px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+        width: 35%;
+    }
+    #submit{
+        background-color: white;
+        color: #808080;
+        border: 0px;
+        width: 20;
+        height: 50px;
+    
+    }
+  
+    }
+    
+    /* ------------------------------------------------------------------------------------ */
+    
+    @media(max-width: 600px){
+    
+      page, header{
+       border: 2px solid blue;
+      }
+
+      .form{
+        flex-direction: column;
+      }
+      
+      #form-div{
+        height: auto;
+      }
+
+      input{
+        width: 60%;
+      }
+
+    #thin-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 75%;
+        height: auto;
+        
+    }
+
+    #last-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    
+    #left-tri, #right-tri{
+        border: 0;
+        border-bottom: 1px solid #808080;
+        width: 100%;
+    }
+    #tri-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    #slideshow-div{
+        width: 100%;
+
+       
+    }
+    
+    #random-div{
+        /*border: 5px solid brown;*/
+        width: 100%;
+    }
+    
+    #slide-show-div-inner{  /* when setting position: relative, make sure the container div width is in pixels so when you make screen smaller the elements stay the same*/
+        width: 100%;
+    }
+    
+    #slideshow-text-div{
+        width: 90%;
+    }
+    
+    #viewmore{
+        width: 50%;
+    }
+    /*#slideshow-text-div div{
+        width: 50%;
+    }*/
+    }
+    
+    /* ------------------------------------------------------------------------------------ */
+    
+    @media(max-width: 500px){
+    
+      page, header{
+        border: 2px solid pink;
+      }
+   
+    }
+    
+    /* ------------------------------------------------------------------------------------ */
+    
+    @media(max-width: 400px){
+    
+      page, header{
+        border: 2px solid yellow;
+      }
+    
+    }
