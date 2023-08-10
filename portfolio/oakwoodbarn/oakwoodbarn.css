@@ -521,9 +521,9 @@ footer a:hover {
 
 @media(max-width: 1700px){
     /* no change */
-    page, header{
+    /*page, header{
      border: 2px solid green;
-    }
+    }*/
 
     
     
@@ -536,9 +536,9 @@ footer a:hover {
     @media(max-width: 1600px){
     
       /* no change */
-      page, header{
+      /*page, header{
           border: 2px solid red;
-      }
+      }*/
 
       #text-div-1{
         width: 65%;
@@ -565,9 +565,9 @@ footer a:hover {
     @media(max-width: 1400px){
     
       /* no change */
-      page, header{
+      /*page, header{
        border: 2px solid purple;
-      }
+      }*/
 
       #left-tri, #right-tri, #middle-tri{
         display: flex;
@@ -612,9 +612,9 @@ footer a:hover {
     @media(max-width: 1300px){
     
       /* no change */
-      page, header{
+      /*page, header{
       border: 2px solid blue;
-      }
+      }*/
 
       
       #random-div{
@@ -623,9 +623,7 @@ footer a:hover {
        
     }
 
-        #div-2{
-
-        }
+    
 
         #gallery-div-1{
             width: 75%;
@@ -643,9 +641,9 @@ footer a:hover {
     @media(max-width: 1200px){
     
       /* no change */
-      page, header{
+      /*page, header{
       border: 2px solid pink;
-      }
+      }*/
 
       /*#slide-show-div-inner{
         border: 10px solid purple;
@@ -674,9 +672,9 @@ footer a:hover {
     
     @media(max-width: 1100px){
     
-      page, header{
+      /*page, header{
       border: 2px solid yellow;
-      }
+      }*/
 
       #left-tri, #right-tri, #middle-tri{
         display: flex;
@@ -705,9 +703,9 @@ footer a:hover {
     
     @media(max-width: 1000px){
     
-      page, header{
+      /*page, header{
       border: 2px solid green;
-      }
+      }*/
 
       #slideshow-text-div, .slideshow-container, .slideshow-container2{
         position: static;
@@ -778,9 +776,9 @@ footer a:hover {
     
     @media(max-width: 900px){
     
-      page, header{
+      /*page, header{
        border: 2px solid red;
-      }
+      }*/
 
         
       header{
@@ -801,6 +799,7 @@ footer a:hover {
       }
       #socials{
         height: 30px;
+        padding-top: 20px;
         position: absolute;
         left: 200px;
         top: 20px;
@@ -846,9 +845,9 @@ footer a:hover {
     
     @media(max-width: 800px){
     
-      page, header{
+      /*page, header{
        border: 2px solid orange;
-      }
+      }*/
 
 
       #gallery-inner-div{
@@ -875,9 +874,9 @@ footer a:hover {
     
     @media(max-width: 700px){
     
-      page, header{
+      /*page, header{
         border: 2px solid purple;
-      }
+      }*/
 
       #nav1, #nav2{
         width: 90%;
@@ -917,9 +916,9 @@ footer a:hover {
     
     @media(max-width: 600px){
     
-      page, header{
+      /*page, header{
        border: 2px solid blue;
-      }
+      }*/
 
       #text-div-1{
         width: 95%;
@@ -1005,9 +1004,9 @@ footer a:hover {
     
     @media(max-width: 500px){
     
-      page, header{
+      /*page, header{
         border: 2px solid pink;
-      }
+      }*/
    
     }
     
@@ -1015,8 +1014,8 @@ footer a:hover {
     
     @media(max-width: 400px){
     
-      page, header{
+      /*page, header{
         border: 2px solid yellow;
-      }
+      }*/
     
     }
