@@ -132,9 +132,6 @@ const Keyboard = { // create Object Keyboard
 
                     keyElement.addEventListener("click", () => {
 
-                        //let utterance = new SpeechSynthesisUtterance("Hello world!");
-                        //let utterance = new SpeechSynthesisUtterance(document.getElementById("typedtext").textContent);
-                        //let utterance = new SpeechSynthesisUtterance(this.properties.value += this.properties.capsLock ? key.toUpperCase() : key.toLowerCase());
                         let utterance = new SpeechSynthesisUtterance(this.properties.value);
                         speechSynthesis.speak(utterance);
                      
@@ -148,8 +145,8 @@ const Keyboard = { // create Object Keyboard
                         keyElement.innerHTML = createIconHTML("NUMBERS");
     
                         keyElement.addEventListener("click", () => {
-                            //this.elements.keysContainer.removeChild(this._createKeys());
-                            
+                            this.elements.keysContainer.removeChild();
+                        
                             this.elements.keysContainer.appendChild(this._createNumberKeys());
                             this.close();
                             this._triggerEvent("onclose");
