@@ -19,25 +19,28 @@ function addTask(){
 
         inputBox.value = "";
 
-        saveDate(); // saves data so we can exit/refresh page and it will still be there when we come back next time
+        saveData(); // saves data so we can exit/refresh page and it will still be there when we come back next time
     }
 }
 
 listContainer.addEventListener("click", function(e){
     if(e.target.tagName === "LI"){
-        e.target.classList.toggle("checked");
+        //let count = 1;
+        e.target.classList.toggle("checked"); // if count is an even number, it will be checked
     }
     else if(e.target.tagName === "SPAN"){
         e.target.parentElement.remove();
     }
+    saveData();
 }, false);
 
 function saveData(){
-    localStorage.setItem("data", listContainer.innerHTML); // save the data as the innerHTML of the list container
+    localStorage.setItem("data", listContainer.innerHTML); // save the data as the innerHTML of the list container  
 }
 
-function showData(){
+function showTask(){
     listContainer.innerHTML = localStorage.getItem("data");
+    
 }
 
-showData();
+showTask();
