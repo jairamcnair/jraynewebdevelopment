@@ -4,7 +4,7 @@
 .container {width: 100%; min-height: 100vh; padding: 10px; background: linear-gradient( #ffd1dc, #e75480); display:flex; flex-direction: column; align-items: center;}
 
 .wordbar {width: 90%; height: 200px; margin-bottom: 10px; background-color: white; border: 1px solid;}
-
+.spellingsuggestions {width: 90%; height: 100px;}
 .buttons {width: 100px; height: 100px; color: white; font-size: 5vh; background-color: rgb(152, 0, 96); margin: 10px; border: none; border-radius: 50%;}
 .buttons:active{background-color:rgb(88, 1, 56)}
 #words {font-size: 5vh; padding: 10px;}
@@ -20,4 +20,5 @@
 #space, #backspace, #capitals, #numbers, #speak, #clear, #enter {
     width: 250px; height: 100px;
 }
+
 

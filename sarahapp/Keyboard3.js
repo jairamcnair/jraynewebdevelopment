@@ -5,9 +5,7 @@ function typing(clicked_id){
     //alert(clicked_id);
     let words = document.getElementById("words");
     switch(clicked_id){
-        case "SPACE":
-        break;
-
+        
         case "backspace":
             words.innerHTML = words.innerHTML.substring(0, words.innerHTML.length - 1); //https://1bestcsharp.blogspot.com/2017/09/javascript-remove-string-first-last-character.html
         break;
@@ -35,7 +33,7 @@ function typing(clicked_id){
             const numberarray = [
                 "+", "-", "x", "%", "=", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "(", ")", "@", "^", "{", "}", "$", ":", ";", "#", "/", "~"
             ]
-            const letterarray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "0", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "~"]
+            const letterarray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "0", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "?"]
             //alert(id);
             if(value2 === 'a'){
                 for(let i = 0; i < 27; ++i){
@@ -74,7 +72,8 @@ function typing(clicked_id){
         break;
 
         case "enter":
-            words.innerHTML =  words.innerHTML += "\n";
+            //words.innerHTML =  words.innerHTML += "\n";
+            words.innerHTML = words.innerHTML + "<br>";
         break;
 
         default:
