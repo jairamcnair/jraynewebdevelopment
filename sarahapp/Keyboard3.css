@@ -5,8 +5,8 @@
 
 .wordbar {width: 90%; height: 200px; margin-bottom: 10px; background-color: white; border: 1px solid;}
 
-.buttons {width: 100px; height: 100px; color: white; font-size: 5vh; background-color: black; margin: 10px;}
-
+.buttons {width: 100px; height: 100px; color: white; font-size: 5vh; background-color: rgb(152, 0, 96); margin: 10px; border: none; border-radius: 50%;}
+.buttons:active{background-color:rgb(88, 1, 56)}
 #words {font-size: 5vh; padding: 10px;}
 
 #keyboard {
