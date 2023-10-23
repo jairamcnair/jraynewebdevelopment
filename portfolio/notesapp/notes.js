@@ -4,7 +4,7 @@ const createBtn = document.querySelector(".btn"); // "Create Note button in html
 let notes = document.querySelectorAll(".input-box"); // selects all input boxes
 
 function updateStorage(){
-    localStorage.setItems("notes", notesContainer.innerHTML);
+    localStorage.setItem("notes", notesContainer.innerHTML);
 }
 
 function showNotes(){
